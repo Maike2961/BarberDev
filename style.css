@@ -289,10 +289,23 @@ i {
 
 .footer-icons {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   color: white;
 }
 
+.footer-icons a:hover i {
+  animation: translateY 0.8s infinite alternate;
+  color: #b42b2b;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1);
+  }
+}
 .btn-zap img {
   max-width: 5rem;
   transition: transform 0.8s;

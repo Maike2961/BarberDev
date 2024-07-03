@@ -224,8 +224,22 @@
 
 .footer-icons{
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     color: $white-normal;
+}
+
+.footer-icons a:hover i{
+    animation: translateY 0.8s infinite alternate;
+    color: $red-dark;
+}
+
+@keyframes translateY{
+    from{
+        transform: translateY(0) scale(1);
+    }
+    to{
+        transform: translateY(-8px) scale(1);
+    }
 }
 
 .btn-zap img{
